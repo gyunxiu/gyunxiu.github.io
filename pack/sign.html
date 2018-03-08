@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <!--top-->
+        <nav class="top" style="height: 100px;">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><img src="img/logo.png" alt="logo" width="150px"/></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!"><i class="material-icons left">search</i>Search</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Sign in<i class="material-icons right">arrow_drop_down</i></a>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#!">Sign in</a></li>
+                            <li><a href="#!">Register</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">shopping_cart</i></a></li>
+                </ul>
+                <!--mobile-->
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#!"><i class="material-icons left">search</i>Search</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Sign in<i class="material-icons right">arrow_drop_down</i></a>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown2" class="dropdown-content">
+                            <li><a href="#!">Sign in</a></li>
+                            <li><a href="#!">Register</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">LUGGAGE</a></li>
+                    <li><a href="acc.html">TRAVEL ACCESSORIES</a></li>
+                    <li><a href="#!">CLOTHINGS</a></li>
+                    <li><a href="#!">SPECIAL PACKAGES</a></li>
+                    <li><a href="#!">PACKING TIPS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--category-->
+        <nav class="cate hide-on-med-and-down">
+            <ul class="left">
+                <li><a href="#!">LUGGAGE</a></li>
+                <li><a href="acc.html">TRAVEL ACCESSORIES</a></li>
+                <li><a href="#!">CLOTHINGS</a></li>
+                <li><a href="#!">SPECIAL PACKAGES</a></li>
+                <li><a href="#!">PACKING TIPS</a></li>
+
+            </ul>
+        </nav>    <!--middle-->
+
+  <div class="row">
+    <div class="col s12 m8 l8 z-depth-2">
+        <ul class="tabs">
+            <li class="tab col s4"><a href="#signin">Return Customer</a></li>
+            <li class="tab col s4"><a href="#signup">New Customer</a></li>
+            <li class="tab col s4"><a href="#guest">Guest</a></li>
+        </ul>
+        <!--sign in-->
+        <div id="signin" class="col s12 center-align">
+            <br>
+            <h5>Sign in with Email</h5>
+            <br>
+            <div class="input-field" style="width: 60%; margin: auto;">
+                <input id="email1" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+            <br>
+            <div class="input-field" style="width: 60%; margin: auto;">
+                <input id="password1" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+            <p>Forgot password?</p>
+            <br>
+            <a href="pay.html" class="waves-effect waves-light btn">Sign in</a>
+            <br><br>
+            <hr>
+            <br>
+            <h5>Or sign in with...<h5>
+            <br>
+            <a href="pay.html"><img src="img/facebook.png" alt="facebook" width="100px"/></a>
+        </div>
+        <div id="signup" class="col s12 center-align">
+        <br>
+        <h5>Register with Email</h5>
+        <br>
+            <div class="input-field" style="width: 60%; margin: auto;">
+                <input id="email2" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+            <br>
+            <div class="input-field" style="width: 60%; margin: auto;">
+                <input id="password2" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+            <br>
+            <div class="input-field" style="width: 60%; margin: auto;">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <br>
+            <div class="input-field" style="width: 60%; margin: auto;">
+                <input id="last_name" type="password" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+            <br>
+            <a href="pay.html" class="waves-effect waves-light btn">Register</a>
+            <br><br>
+            <hr>
+            <br>
+            <h5>Or register with...<h5>
+            <br>
+            <a href="pay.html"><img src="img/facebook.png" alt="facebook" width="100px"/></a>
+        </div>
+        <div id="guest" class="col s12 center-align">
+            <br>
+            <h5>Check out as a guest</h5>
+            <br>
+            <a href="pay.html" class="waves-effect waves-light btn">Go</a>
+            <br><br>
+        </div>
+    </div>
+    <!--my cart-->
+    <div class="col s12 m4 l4" style="padding-left:40px;">
+        <h6>My Cart</h6>
+        <a href="cart.html" class="right">Edit</a>
+        <br>
+        <hr>
+        <br>
+        <div class="valign-wrapper">
+            <div class="col s4 m5 l4">
+                <img class="responsive" src="img/p1.png" width="100%">
+            </div>
+            <div class="col s8 m7 l8">
+                <small>Small Organize Bag</small>
+                <p>$68.00</p>
+                <small class="valign-wrapper">Red<i class="material-icons">arrow_drop_down</i>| Qty 1<i class="material-icons">arrow_drop_down</i></small>
+            </div>
+        </div>
+        <hr>
+        <small>Subtotal: <span class="right">$68.00</span></small>
+        <br>
+        <small>Shipping: <span class="right">free</span></small>
+        <p>Total: <span class="right">$68.00</span></p>
+    </div>
+   
+  </div>
+
+
+</div>
+<!--footer-->
+    <footer class="page-footer center-align z-depth-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col s12 m3 l3">
+                    <h6>About Pack</h6>
+                    <ul>
+                        <li><a class="grey-text" href="about.html">Our brand</a></li>
+                        <li><a class="grey-text" href="#!">FAQ</a></li>
+                        <li><a class="grey-text" href="#!">Legal stuff</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m3 l3">
+                    <h6>Info</h6>
+                    <ul>
+                        <li><a class="grey-text" href="contact.html">Contact us</a></li>
+                        <li><a class="grey-text" href="#!">Return policy</a></li>
+                        <li><a class="grey-text" href="#!">Shipping/ delivery</a></li>
+                        <li><a class="grey-text" href="#!">Customer Service</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m3 l3">
+                    <h6>Keep in touch</h6>
+                    <p class="grey-text">
+                        Sign up for discounts, new arrivals and packing tips!
+                    </p>
+                </div>
+
+                <div class="col s12 m3 l3">
+                    <h6 class>Social</h5>
+                        <p class="grey-text">You can use rows and columns here to organize your footer content.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Yunxiu Guo All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+
+</body>
+
+</html>

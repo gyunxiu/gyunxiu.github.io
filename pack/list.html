@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <!--top-->
+        <nav class="top" style="height: 100px;">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><img src="img/logo.png" alt="logo" width="150px"/></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!"><i class="material-icons left">search</i>Search</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Sign in<i class="material-icons right">arrow_drop_down</i></a>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#!">Sign in</a></li>
+                            <li><a href="#!">Register</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">shopping_cart</i></a></li>
+                </ul>
+                <!--mobile-->
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#!"><i class="material-icons left">search</i>Search</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Sign in<i class="material-icons right">arrow_drop_down</i></a>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown2" class="dropdown-content">
+                            <li><a href="#!">Sign in</a></li>
+                            <li><a href="#!">Register</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">LUGGAGE</a></li>
+                    <li><a href="acc.html">TRAVEL ACCESSORIES</a></li>
+                    <li><a href="#!">CLOTHINGS</a></li>
+                    <li><a href="#!">SPECIAL PACKAGES</a></li>
+                    <li><a href="#!">PACKING TIPS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--category-->
+        <nav class="cate hide-on-med-and-down">
+            <ul class="left">
+                <li><a href="#!">LUGGAGE</a></li>
+                <li><a href="acc.html">TRAVEL ACCESSORIES</a></li>
+                <li><a href="#!">CLOTHINGS</a></li>
+                <li><a href="#!">SPECIAL PACKAGES</a></li>
+                <li><a href="#!">PACKING TIPS</a></li>
+
+            </ul>
+        </nav>    <!--middle-->
+    <nav>
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="index.html" class="breadcrumb">Home</a>
+        <a href="acc.html" class="breadcrumb">Travel Accessories</a>
+        <a href="#!" class="breadcrumb">Organizers</a>
+        <div class="right">
+            <small>Sort By:</small>
+            <!-- Dropdown Trigger -->
+            <a class="dropdown-button" href="#!" data-activates="dropdown3"> Featured<i class="material-icons right">arrow_drop_down</i></a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown3' class='dropdown-content'>
+                <li><a href="#!">Featured</a></li>
+                <li><a href="#!">New</a></li>
+                <li><a href="#!">Price</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!--sidecate-->
+  <div class="row">
+    <div class="col s6 m3 l3 sidecate">
+        <ul>
+            <li><h5>Organizers</h5></li>
+            <!--options-->
+            <li>
+                <ul class="collapsible options" data-collapsible="expandable"> 
+                    <li>
+                        <div class="collapsible-header">Type<i class="material-icons right">arrow_drop_down</i></div>
+                        <div class="collapsible-body">
+                            <small>
+                            <input type="checkbox" id="type1" />
+                            <label for="type1">Packing cubes set</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="type2" />
+                            <label for="type2">Single cube</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="type3" />
+                            <label for="type3">pouches</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="type4" />
+                            <label for="type4">Compression bags</label>
+                            </small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">Color<i class="material-icons right">arrow_drop_down</i></div>
+                        <div class="collapsible-body">
+                            <small>
+                            <input type="checkbox" id="color1" />
+                            <label for="color1">Red</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="color2" />
+                            <label for="color2">White</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="color3" />
+                            <label for="color3">Blue</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="color4" />
+                            <label for="color4">Yellow</label>
+                            </small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">Price<i class="material-icons right">arrow_drop_down</i></div>
+                        <div class="collapsible-body">
+                            <small>
+                            <input type="checkbox" id="price1" />
+                            <label for="price1">$100~$200</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="price2" />
+                            <label for="price2">$50~$99</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="price3" />
+                            <label for="price3">$20~$49</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="price4" />
+                            <label for="price4">Under $20</label>
+                            </small>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header">Brand<i class="material-icons right">arrow_drop_down</i></div>
+                        <div class="collapsible-body">
+                            <small>
+                            <input type="checkbox" id="brand1" />
+                            <label for="brand1">Pack</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="brand2" />
+                            <label for="brand2">Life</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="brand3" />
+                            <label for="brand3">Green juice</label>
+                            </small>
+                            <br>
+                            <small>
+                            <input type="checkbox" id="brand4" />
+                            <label for="brand4">Hello summer </label>
+                            </small>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </li>
+        </ul>
+    </div>
+   
+    <!--list-->
+    <div class="col s6 m9 l9">
+    <div class="col s12 m4 l4">
+        <a href="product.html"><img src="img/p1.png" class="responsive-img" alt="product1" /></a>
+        <small><a href="product.html">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+     <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p2.png" class="responsive-img" alt="product2" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+     <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p3.png" class="responsive-img" alt="product3" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+     <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p4.png" class="responsive-img" alt="product4" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+    <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p5.png" class="responsive-img" alt="product5" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+    <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p6.png" class="responsive-img" alt="product6" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+    <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p1.png" class="responsive-img" alt="product1" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+     <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p2.png" class="responsive-img" alt="product2" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+     <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p3.png" class="responsive-img" alt="product3" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+     <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p4.png" class="responsive-img" alt="product4" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+    <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p5.png" class="responsive-img" alt="product5" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+    <div class="col s12 m4 l4">
+        <a href="#!"><img src="img/p6.png" class="responsive-img" alt="product6" /></a>
+        <small><a href="#!">Small Organize Bag</a></small>
+        <p>$68.00</p>        
+    </div>
+
+    <ul class="pagination center-align">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+
+    </div>
+  </div>
+
+</div>
+
+<!--footer-->
+    <footer class="page-footer center-align z-depth-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col s12 m3 l3">
+                    <h6>About Pack</h6>
+                    <ul>
+                        <li><a class="grey-text" href="about.html">Our brand</a></li>
+                        <li><a class="grey-text" href="#!">FAQ</a></li>
+                        <li><a class="grey-text" href="#!">Legal stuff</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m3 l3">
+                    <h6>Info</h6>
+                    <ul>
+                        <li><a class="grey-text" href="contact.html">Contact us</a></li>
+                        <li><a class="grey-text" href="#!">Return policy</a></li>
+                        <li><a class="grey-text" href="#!">Shipping/ delivery</a></li>
+                        <li><a class="grey-text" href="#!">Customer Service</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m3 l3">
+                    <h6>Keep in touch</h6>
+                    <p class="grey-text">
+                        Sign up for discounts, new arrivals and packing tips!
+                    </p>
+                </div>
+
+                <div class="col s12 m3 l3">
+                    <h6 class>Social</h5>
+                        <p class="grey-text">You can use rows and columns here to organize your footer content.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Yunxiu Guo All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <!--top-->
+        <nav class="top" style="height: 100px;">
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><img src="img/logo.png" alt="logo" width="150px"/></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#!"><i class="material-icons left">search</i>Search</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Sign in<i class="material-icons right">arrow_drop_down</i></a>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#!">Sign in</a></li>
+                            <li><a href="#!">Register</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">shopping_cart</i></a></li>
+                </ul>
+                <!--mobile-->
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#!"><i class="material-icons left">search</i>Search</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Sign in<i class="material-icons right">arrow_drop_down</i></a>
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown2" class="dropdown-content">
+                            <li><a href="#!">Sign in</a></li>
+                            <li><a href="#!">Register</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">LUGGAGE</a></li>
+                    <li><a href="acc.html">TRAVEL ACCESSORIES</a></li>
+                    <li><a href="#!">CLOTHINGS</a></li>
+                    <li><a href="#!">SPECIAL PACKAGES</a></li>
+                    <li><a href="#!">PACKING TIPS</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--category-->
+        <nav class="cate hide-on-med-and-down">
+            <ul class="left">
+                <li><a href="#!">LUGGAGE</a></li>
+                <li><a href="acc.html">TRAVEL ACCESSORIES</a></li>
+                <li><a href="#!">CLOTHINGS</a></li>
+                <li><a href="#!">SPECIAL PACKAGES</a></li>
+                <li><a href="#!">PACKING TIPS</a></li>
+
+            </ul>
+        </nav>    <!--middle-->
+
+  <div class="row">
+    <div class="col s12 m8 l8">
+        <ul class="collapsible pay" data-collapsible="expandable">
+            <li>
+            <div class="collapsible-header">
+            <h5 class="center-align">Shipment Information<a href="pay.html" class="right" style="font-size: 14px;">Edit</a></h5>
+                
+            </div>
+            <!--shipment-->
+            <div class="collapsible-body">
+            <div id="shipment">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                        <input id="first_name1" type="text" class="validate">
+                        <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                        <input id="last_name1" type="text" class="validate">
+                        <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input id="address1" type="text" class="validate">
+                        <label for="address">Address</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s4">
+                        <input id="city" type="text" class="validate">
+                        <label for="city">City</label>
+                        </div>
+                        <div class="input-field col s4">
+                        <input id="zip" type="text" class="validate">
+                        <label for="zip">Zip code</label>
+                        </div>
+                        <div class="input-field col s4">
+                        <input id="state" type="text" class="validate">
+                        <label for="state">State</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                        <input id="phone1" type="tel" class="validate">
+                        <label for="phone">Phone</label>
+                        </div>
+                        <div class="col s6">
+                        </div>
+                    </div>
+                    <div class="input-field col s12">
+                        <select>
+                        <option value="1">Free standard shipping (5-7 business days)</option>
+                        <option value="2">Express shipping(2-3 business days): $8.99</option>
+                        <option value="3">The next day shipping(1 business day): $12.99</option>
+                        </select>
+                        <label>Shippment Method</label>
+                    </div>
+                </form>
+                <!--next-->
+                <div class="center-align">
+                <a class="waves-effect waves-light btn" id="shipnx">Next step</a>
+                </div>
+            </div>
+            </div>
+            </li>
+            <li>
+            <h5 class="collapsible-header center-align">Payment Information<a class="right" style="font-size: 14px;">Edit</a></h5>
+            <!--payment-->
+            <div class="collapsible-body">
+               <div  id="payment">
+                <form class="col s12">
+                    <p>
+                        <input type="checkbox" class="filled-in" id="filled-in-box" />
+                        <label for="filled-in-box">Use shipping address</label>
+                    </p>
+                    <!--payment address-->
+                    <div id="payment_address">
+                        <div class="row">
+                            <div class="input-field col s6">
+                            <input id="first_name2" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                            <input id="last_name2" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="address2" type="text" class="validate">
+                            <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s4">
+                            <input id="city2" type="text" class="validate">
+                            <label for="city">City</label>
+                            </div>
+                            <div class="input-field col s4">
+                            <input id="zip2" type="text" class="validate">
+                            <label for="zip">Zip code</label>
+                            </div>
+                            <div class="input-field col s4">
+                            <input id="state2" type="text" class="validate">
+                            <label for="state">State</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                            <input id="phone2" type="tel" class="validate">
+                            <label for="phone">Phone</label>
+                            </div>
+                            <div class="col s6">
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of payment address-->
+                    <h6 class="center-align">Pay by Credit Card</h6>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input id="cardnb" type="text" class="validate">
+                        <label for="cardnb">Card Number</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s3">
+                        <input id="exdate" type="text" class="validate" placeholder="Month">
+                        <label for="exdate">Expiration</label>
+                        </div>
+                        <div class="input-field col s3">
+                        <input id="exmonth" type="text" class="validate" placeholder="Year">
+                        <label for="exmonth">Zip code</label>
+                        </div>
+                        <div class="input-field col s3">
+                        <input id="exyear" type="text" class="validate">
+                        <label for="exyear">CVV</label>
+                        </div>
+                        <div class="input-field col s3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                        <input id="emadd" type="email" class="validate">
+                        <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <small>
+                    <input type="checkbox" class="filled-in" id="filled-in-box2" checked="checked" />
+                    <label for="filled-in-box2">Sign up for discounts, new arrivals and packing tips</label>
+                    </small>
+                    <br><br>
+                    <div class="center-align">
+                    <h6 class="center-align">Or Pay by...</h6>
+                    <br><br>
+                    <img src="img/paypal_logo.png" alt="paypal" width="150px;" />
+                    </div>
+                    <br>
+                    
+                </form>
+                
+                <!--next-->
+                <div class="center-align">
+                <a class="waves-effect waves-light btn" id="paymentnx">Next step</a>
+                </div>
+               </div>
+            </div>
+            </li>
+            <!--end of payment-->
+            <li>
+            <h5 class="collapsible-header center-align">Order Review</h5>
+            <!--review-->
+            <div class="collapsible-body">
+                <h6 class="center-align">Please review your order information and make any edits if necessary.<br>You will receive a conrmation email once your order has been placed.</h6>
+                <br><br>
+            <!--place order-->
+                <div class="center-align">
+                <a href="review.html" class="waves-effect waves-light btn">Place Order</a>
+                </div>
+            </div>
+            </li>
+        </ul>
+       
+    </div>
+    <!--my cart-->
+    <div class="col s12 m4 l4" style="padding-left:40px;">
+        <h6>My Cart</h6>
+        <a href="cart.html" class="right">Edit</a>
+        <br>
+        <hr>
+        <br>
+        <div class="valign-wrapper">
+            <div class="col s4 m5 l4">
+                <img class="responsive" src="img/p1.png" width="100%">
+            </div>
+            <div class="col s8 m7 l8">
+                <small>Small Organize Bag</small>
+                <p>$68.00</p>
+                <small class="valign-wrapper">Red<i class="material-icons">arrow_drop_down</i>| Qty 1<i class="material-icons">arrow_drop_down</i></small>
+            </div>
+        </div>
+        <hr>
+        <small>Subtotal: <span class="right">$68.00</span></small>
+        <br>
+        <small>Shipping: <span class="right">free</span></small>
+        <p>Total: <span class="right">$68.00</span></p>
+    </div>
+   
+  </div>
+
+
+</div>
+<!--footer-->
+    <footer class="page-footer center-align z-depth-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col s12 m3 l3">
+                    <h6>About Pack</h6>
+                    <ul>
+                        <li><a class="grey-text" href="about.html">Our brand</a></li>
+                        <li><a class="grey-text" href="#!">FAQ</a></li>
+                        <li><a class="grey-text" href="#!">Legal stuff</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m3 l3">
+                    <h6>Info</h6>
+                    <ul>
+                        <li><a class="grey-text" href="contact.html">Contact us</a></li>
+                        <li><a class="grey-text" href="#!">Return policy</a></li>
+                        <li><a class="grey-text" href="#!">Shipping/ delivery</a></li>
+                        <li><a class="grey-text" href="#!">Customer Service</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m3 l3">
+                    <h6>Keep in touch</h6>
+                    <p class="grey-text">
+                        Sign up for discounts, new arrivals and packing tips!
+                    </p>
+                </div>
+
+                <div class="col s12 m3 l3">
+                    <h6 class>Social</h5>
+                        <p class="grey-text">You can use rows and columns here to organize your footer content.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Yunxiu Guo All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bin/materialize.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+
+</body>
+
+</html>
