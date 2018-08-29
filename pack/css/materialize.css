@@ -3408,9 +3408,6 @@ small {
   background-color: #81BBC1;
   padding: 20px; }
 
-img.feature {
-  border: .5px solid lightgray; }
-
 .card-panel {
   transition: box-shadow .25s;
   padding: 24px;
